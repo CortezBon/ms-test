@@ -2,8 +2,14 @@ const express = require ('express');
 const morgan = require ('morgan');
 const app = express();
 
-app.use(morgan('dev'));
 
+
+// middleware
+app.use(morgan('dev'));
+app.use(express.json());
+
+// routes
 app.use(require('./routes/index'));
+app.use('/devops', require('./routes/devops'));
 
 module.exports = app;
