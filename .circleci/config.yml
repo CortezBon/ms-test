@@ -5,12 +5,9 @@ workflows:
   node-tests:
     jobs:
       - node/test
-
-workflows:
-  build-deploy:
-    jobs:
-      - js_build
       - build_server_pdfs: # << the job to conditionally run based on the filter-by-branch-name.
-          filters:
-            branches:
-              only: develop
+        filters:
+          branches:
+            only: develop
+      
+
