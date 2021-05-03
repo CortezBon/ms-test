@@ -4,7 +4,7 @@
   "description": "MS que tendrá un endpoint /DevOps.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js --exec node"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,8 @@
     "helmet": "^4.6.0",
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
