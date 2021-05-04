@@ -12,5 +12,3 @@ workflows:
             branches:
               only:
                 - develop
-      
-
