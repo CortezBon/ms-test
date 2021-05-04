@@ -7,9 +7,11 @@ workflows:
   sample:
     jobs:
       - node/test:
-        version: '10.19'
+          version: '10.19'
+      
         filters:
           branches:
-            only: develop
+            only:
+              - develop
       
 
