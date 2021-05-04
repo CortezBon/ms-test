@@ -1,13 +1,13 @@
 version: 2.1
 
 orbs:
-  node: circleci/node@4.1
+  node: circleci/node@4.3.0
 
 workflows:
   sample:
     jobs:
       - node/test:
-          version: '10.19'
+          version: 10.19
             filters:
               branches:
                 only:
