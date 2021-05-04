@@ -6,7 +6,7 @@ orbs:
 workflows:
   sample:
     jobs:
-      - mode/test:
+      - node/test:
         version: '10.19'
         filters:
           branches:
