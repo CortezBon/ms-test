@@ -8,10 +8,9 @@ workflows:
     jobs:
       - node/test:
           version: '10.19'
-      
-        filters:
-          branches:
-            only:
-              - develop
+            filters:
+              branches:
+                only:
+                  - develop
       
 
