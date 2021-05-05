@@ -4,7 +4,8 @@
   "description": "MS que tendrá un endpoint /DevOps.",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js --exec node"
+    "dev": "nodemon src/index.js --exec node",
+    "test": "mocha tests/test.js --timeout 15000"
   },
   "repository": {
     "type": "git",
@@ -19,11 +20,14 @@
   "homepage": "https://github.com/CortezBon/ms-test#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^4.6.0",
     "jsonwebtoken": "^8.5.1",
+    "mocha": "^8.3.2",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
